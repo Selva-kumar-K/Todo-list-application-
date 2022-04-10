@@ -5,10 +5,15 @@ let getE = document.getElementById("txt");
 let count = 0;
 
 function add_task(){
+    if (getE.value.trim() == ''){
+        alert("Please enter the text")
+    }
+    else{
     
         
     
         let div = document.createElement("div");
+        div.className = "div";
         div.id = "div1";
         document.body.append(div);
 
@@ -16,6 +21,7 @@ function add_task(){
         div.appendChild(ul);
         count++
         let cbx = document.createElement("input");
+        cbx.className = "cbx";
         cbx.type = "checkbox";
         cbx.id = "checkBox"+count;
         cbx.onclick = function strike() {
@@ -27,13 +33,15 @@ function add_task(){
         
 
         let lab = document.createElement("label");
+        lab.className = "lab";
         lab.setAttribute("for","checkBox"+count);
         lab.textContent = getE.value;
         ul.appendChild(lab);
+        
 
 
         let sp = document.createElement("span");
-        sp.classList.add("cont","far","fa-trash-alt","delete-icon");
+        sp.classList.add("far","fa-trash-alt","delete-icon");
         sp.addEventListener('click',() => {
             document.body.removeChild(div);
         })
@@ -41,5 +49,5 @@ function add_task(){
 
 }
 
-    
+}
 

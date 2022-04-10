@@ -1,22 +1,114 @@
-.span {
-    position: absolute;
-    margin-left:20%;
-    margin-top : 5px;
-
-}
-
-.cont{
-
-    position: relative;
-}
 
 .strike{
 
     text-decoration: line-through;
+    color:red;
 
 }
 
 h1{
+    margin-top: 50px;
     text-align: center;
     color : green;
+    font-family: cursive;
 }
+#txt:hover {
+    border-color:darkred;
+    border-width: 3px;
+
+}
+
+.button1{
+    width: 84px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 6px;
+    color:maroon;
+    font-family: cursive;
+    font-weight: normal;
+    background-color: solid purple;
+
+}
+
+.button1:hover{
+    border-color: green;
+    border-width: 3px;
+
+}
+body{
+
+    background-color: floralwhite;
+}
+
+.text1{
+    width: 25%;
+    height : 40px;
+    border-radius: 6px;
+}
+
+::placeholder{
+    text-align: center;
+    font-family: cursive;
+}
+
+form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2{
+    margin-left: 35%;
+    color :mediumpurple;
+    margin-top: 40px;
+    font-family: cursive;
+}
+
+.div{
+    margin-top : 30px;
+    margin-left: 33%;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;
+    color:black ;
+    width: 40%;
+    height: 50px;
+    background-color:darkseagreen;
+    border-radius: 10px;
+    
+}
+
+.cbx{
+    width : 20px;
+    height : 15px;
+    margin-top: 10px;
+    
+}
+
+.cbx:hover{
+    color:rgb(100, 10, 10);
+}
+
+
+ul{
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+span{
+    margin-top: 8px;
+    
+}
+
+.lab{
+    margin-right: 70px;
+}
+body{
+    background-image: url("https://wallpapertag.com/wallpaper/full/a/e/1/118695-popular-black-gradient-background-2560x1600.jpg");
+}
+
+span:hover{
+    color:rgb(100, 10, 10);
+}
+
